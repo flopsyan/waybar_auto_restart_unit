@@ -1,2 +1,10 @@
-# waybar_auto_restart_unit
-A minimal systemd unit that automatically restarts Waybar on crashes (e. g. segmentation faults). Does not need any dependencies.
+# Installation Instructions
+1. **Download the file**
+
+2. **Move it to `~/.config/systemd/user/`**
+
+3. **Reload the global systemd (user-)units and start and enable the service**</br>
+   `systemctl --user daemon-reload`
+   `systemctl --user enable --now waybar-autostart.service`
+
+4. **Remove existing Waybar autostart lines, if you have any (e. g. in your hyprland config)**
